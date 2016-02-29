@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="iso-8859-1">
+	<script type="text/javascript" src="librerias/JSs/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="librerias/JSs/jquery.md5.min.js"></script>
+	<script type="text/javascript" src="librerias/JSs/zclip/jquery.zclip.min.js"></script>
+	<script type="text/javascript" src="JSs/script.js"></script>
+	<title>Generador de MD5</title>
+	<style type="text/css">
+		input.copiar:hover{
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		input.copiar{
+			color:#000;
+			cursor: pointer;
+		}
+		div#contenedor{
+			margin:auto auto auto auto;
+			text-align: center;
+		}
+		div.cuerpo{
+			background-color: #F00;
+			margin:auto auto auto auto;
+			text-align: center;
+			width: 500px;
+			height: 300px;
+		}
+		input#datos{
+			width: 200px;
+			height: 30px;
+			font-size: 30px;
+		}
+		p#respuesta{
+			background-color: #FF0;
+			width: 98%;
+			height: 30px;
+			margin: auto auto auto auto;
+			font-size: 30px;
+		}
+		h1{
+			text-decoration: underline;
+		}
+		p.respuesta{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<h1>GENERADOR DE MD5</h1>
+		<div class="cuerpo">
+		<br />
+			<input type="text" id="datos">
+			<input type="submit" id="resultado" value="Generar">
+			<br /><br />
+				<p id="respuesta" class="respuesta"></p>
+		</div>
+	</div>
+</body>
+</html>
